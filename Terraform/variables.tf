@@ -3,9 +3,14 @@ variable "vpc-name" {
   default = "bankapp-vpc"
 }
 
-variable "bankapp-vpc-public-subnet" {
+variable "bankapp-vpc-public-subnet1" {
   type    = string
-  default = "bankapp-vpc-public-subnet"
+  default = "bankapp-vpc-public-subnet1"
+}
+
+variable "bankapp-vpc-public-subnet2" {
+  type    = string
+  default = "bankapp-vpc-public-subnet2"
 }
 
 variable "bankapp-igw" {
