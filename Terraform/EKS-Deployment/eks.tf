@@ -4,7 +4,18 @@ module "eks" {
 
   cluster_name    = "bankapp-eks-cluster"
   cluster_version = "1.29"
-
+  cluster_addons = {
+    coredns = {
+      most_recent = true
+    }
+    kube-proxy = {
+      most_recent = true
+    }
+    vpc-cni = {
+      most_recent = true
+    }
+  }
+  
 
   subnet_ids = [aws_subnet.eks-bankapp-public-subnet1.id, aws_subnet.eks-bankapp-public-subnet2.id]
   vpc_id     = aws_vpc.bankapp-eks-vpc.id
