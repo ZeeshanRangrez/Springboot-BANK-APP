@@ -3,7 +3,7 @@
 ## Steps to implement:
 
 - Set Up Terraform 
-    - Install Terraform: Make sure Terraform is installed on your system.
+    - Install Terraform: Make sure Terraform is installed on your system. If not, <a href="https://github.com/DevMadhup/DevOps-Tools-Installations/blob/main/Terraform/terraform.sh">click</a> here to install.
 
 - In the current directory you will see all the `.tf` files
 
